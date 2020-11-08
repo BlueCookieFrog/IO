@@ -1,0 +1,11 @@
+* D:\_Git\IO\LAB1\Zener\Zener.asc
+V1 N001 0 12
+R1 N002 N001 1k
+Robc 0 N002 {R}
+D1 0 N002 BZX84C6V2LT116
+.model D D
+.lib C:\Users\stasz\Documents\LTspiceXVII\lib\cmp\standard.dio
+.op 1
+.step param R 1k 20k 100
+.backanno
+.end
