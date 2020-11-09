@@ -1,0 +1,15 @@
+* D:\_Git\IO\LAB1\tranzystor\Tranzystor_current_sweep.asc
+V1 N001 0 12
+R1 N003 N001 1k
+D1 0 N003 BZX84C6V2LT116
+Q1 N001 N003 N002 0 NPN
+I1 N002 0 {load}
+.model D D
+.lib C:\Users\stasz\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\stasz\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.op 1
+.step param load 0.01 1 0.01
+.backanno
+.end
